@@ -5,7 +5,7 @@
 By **AADHIL FAZAL** · [@aadhilfazal](https://github.com/aadhilfazal)
 
 Give Cryptid encoded text or a file. It searches for English plaintext and CTF
-flags such as `flag{...}`, `KAP{...}` and `HTB{...}`, and explains the byte
+flags such as `flag{...}`, `THM{...}` and `HTB{...}`, and explains the byte
 transformations that led to its answer. You do not need to know the layer count,
 the method order, or a Caesar/XOR key.
 
