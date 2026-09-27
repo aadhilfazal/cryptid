@@ -1,0 +1,59 @@
+Cryptid 1.0.0 local regression results
+Linux / CPython 3.12.14
+
+test_collision_protection (test_cryptid.CLI.test_collision_protection) ... ok
+test_empty_and_missing_input (test_cryptid.CLI.test_empty_and_missing_input) ... ok
+test_large_input_rejected (test_cryptid.CLI.test_large_input_rejected) ... ok
+test_output_and_report (test_cryptid.CLI.test_output_and_report) ... ok
+test_raw_output_exact (test_cryptid.CLI.test_raw_output_exact) ... ok
+test_removed_switches_rejected (test_cryptid.CLI.test_removed_switches_rejected) ... ok
+test_binary_signature_is_not_plaintext (test_cryptid.KnownAnswers.test_binary_signature_is_not_plaintext) ... ok
+test_caesar_known_answer (test_cryptid.KnownAnswers.test_caesar_known_answer) ... ok
+test_compression_integrity (test_cryptid.KnownAnswers.test_compression_integrity) ... ok
+test_decompression_limits (test_cryptid.KnownAnswers.test_decompression_limits) ... ok
+test_encoding_vectors (test_cryptid.KnownAnswers.test_encoding_vectors) ... ok
+test_invalid_utf8_is_not_plaintext (test_cryptid.KnownAnswers.test_invalid_utf8_is_not_plaintext) ... ok
+test_original_mixed_examples (test_cryptid.KnownAnswers.test_original_mixed_examples) ... ok
+test_percent_syntax_can_be_rot47 (test_cryptid.KnownAnswers.test_percent_syntax_can_be_rot47) ... ok
+test_plaintext_is_not_modified (test_cryptid.KnownAnswers.test_plaintext_is_not_modified) ... ok
+test_repeated_layers (test_cryptid.KnownAnswers.test_repeated_layers) ... ok
+test_reversed_base64_can_resemble_quoted_printable (test_cryptid.KnownAnswers.test_reversed_base64_can_resemble_quoted_printable) ... ok
+test_rot13_known_answer (test_cryptid.KnownAnswers.test_rot13_known_answer) ... ok
+test_terminal_controls_escaped (test_cryptid.KnownAnswers.test_terminal_controls_escaped) ... ok
+test_first_release_and_watermark (test_extended.CLIContracts.test_first_release_and_watermark) ... ok
+test_missing_output_directory (test_extended.CLIContracts.test_missing_output_directory) ... ok
+test_output_report_collision (test_extended.CLIContracts.test_output_report_collision) ... ok
+test_symlink_input_collision (test_extended.CLIContracts.test_symlink_input_collision) ... ok
+test_top_range_and_ambiguous_sources (test_extended.CLIContracts.test_top_range_and_ambiguous_sources) ... ok
+test_unresolved_input_does_not_overwrite_output (test_extended.CLIContracts.test_unresolved_input_does_not_overwrite_output) ... ok
+test_all_compression_integrity_checks (test_extended.CodecBoundaries.test_all_compression_integrity_checks) ... ok
+test_all_compression_output_limits (test_extended.CodecBoundaries.test_all_compression_output_limits) ... ok
+test_all_reversible_format_variants (test_extended.CodecBoundaries.test_all_reversible_format_variants) ... ok
+test_arbitrary_bytes_roundtrip (test_extended.CodecBoundaries.test_arbitrary_bytes_roundtrip) ... ok
+test_base58_leading_zero_bytes (test_extended.CodecBoundaries.test_base58_leading_zero_bytes) ... ok
+test_invalid_numeric_byte_lists (test_extended.CodecBoundaries.test_invalid_numeric_byte_lists) ... ok
+test_morse_complete_alphabet (test_extended.CodecBoundaries.test_morse_complete_alphabet) ... ok
+test_morse_unknown_symbols_rejected (test_extended.CodecBoundaries.test_morse_unknown_symbols_rejected) ... ok
+test_padding_and_nonzero_pad_bits_rejected (test_extended.CodecBoundaries.test_padding_and_nonzero_pad_bits_rejected) ... ok
+test_short_rfc_vectors (test_extended.CodecBoundaries.test_short_rfc_vectors) ... ok
+test_unicode_surrogates_rejected (test_extended.CodecBoundaries.test_unicode_surrogates_rejected) ... ok
+test_unicode_text_bytes (test_extended.CodecBoundaries.test_unicode_text_bytes) ... ok
+test_url_form_spaces_in_structured_text (test_extended.CodecBoundaries.test_url_form_spaces_in_structured_text) ... ok
+test_url_form_without_percent_escapes (test_extended.CodecBoundaries.test_url_form_without_percent_escapes) ... ok
+test_zlib_window_sizes (test_extended.CodecBoundaries.test_zlib_window_sizes) ... ok
+test_affine_wrapper_collision_prefers_readable_body (test_extended.SearchRegressions.test_affine_wrapper_collision_prefers_readable_body) ... ok
+test_all_caesar_shifts (test_extended.SearchRegressions.test_all_caesar_shifts) ... ok
+test_all_plaintext_bytes_preserved (test_extended.SearchRegressions.test_all_plaintext_bytes_preserved) ... ok
+test_all_single_byte_xor_keys (test_extended.SearchRegressions.test_all_single_byte_xor_keys) ... ok
+test_embedded_flag_requires_readable_context (test_extended.SearchRegressions.test_embedded_flag_requires_readable_context) ... ok
+test_mostly_ascii_binary_does_not_enter_text_only_attacks (test_extended.SearchRegressions.test_mostly_ascii_binary_does_not_enter_text_only_attacks) ... ok
+test_repeated_base85_formats (test_extended.SearchRegressions.test_repeated_base85_formats) ... ok
+test_reversed_lowercase_base32 (test_extended.SearchRegressions.test_reversed_lowercase_base32) ... ok
+test_xor_flag_resembling_quoted_printable (test_extended.SearchRegressions.test_xor_flag_resembling_quoted_printable) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 4.229s
+
+OK
+
+Parameterized subcases: 995

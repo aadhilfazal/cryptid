@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptid-ctf"
+version = "1.0.0"
+description = "Automatic layered decoding and classical cipher recovery for English CTF challenges"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "AADHIL FAZAL"}]
+keywords = ["ctf", "cryptanalysis", "decoder", "cli"]
+classifiers = ["Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3"]
+dependencies = []
+
+[project.urls]
+Author = "https://github.com/aadhilfazal"
+
+[project.scripts]
+cryptid = "cryptid.cli:entrypoint"
+
+[tool.setuptools.packages.find]
+include = ["cryptid*"]
+
+[tool.setuptools.package-data]
+cryptid = ["data/*.gz", "data/*.md"]

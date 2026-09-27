@@ -1,0 +1,30 @@
+CRYPTID 1.0.0 | AADHIL FAZAL (@aadhilfazal)
+https://github.com/aadhilfazal
+
+STATUS   LIKELY-PLAINTEXT
+
+DECODING STEPS
+  01. Binary  (503 → 56 bytes)
+      8-bit groups
+      Output: 'JVNEYV3ZGIYHE6KYJBSVEMTRGB4U4SDTJBIDQ42HLBBTE6SLHU6Q===='
+  02. Base32  (56 → 32 bytes)
+      RFC 4648; canonical padding bits verified
+      Output: 'MZLWy20ryXHeR2q0yNHsHP8sGXC2zK=='
+  03. Caesar  (32 → 32 bytes)
+      Decrypt by subtracting 20 (mod 26); searched all shifts
+      Output: 'SFRCe20xeDNkX2w0eTNyNV8yMDI2fQ=='
+  04. Base64  (32 → 22 bytes)
+      Canonical alphabet and padding bits verified
+      Output: 'HTB{m1x3d_l4y3r5_2026}'
+
+RESULT   'HTB{m1x3d_l4y3r5_2026}'
+EVIDENCE Recognised CTF flag wrapper; contents are preserved
+
+Strong plaintext candidate. Appearance is not mathematical proof that every original layer is gone.
+
+OTHER CANDIDATES (heuristic order, not confidence percentages)
+  2. unchanged input: '01001010 01010110 01001110 01000101 01011001 01010110 00110011 01011010 01000111 01001001 ' …
+  3. Reverse: '10111100 10111100 10111100 10111100 10001010 01101100 10101010 00010010 00110010 11001010 ' …
+
+Searched 17 states in 0.11s.
+Steps show the route found; the original encoding history may not be unique.

@@ -1,0 +1,16 @@
+group	method	name	mode	expectation	correct	in_top5	status	seconds	route	limits	output_sha256	failure_preview
+repeated	legacy:repeated	b64-0-16	normal	recover	1	1	likely-plaintext	0.171718	Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64		3ad3994e9c09c8c25fa84fba5a11baefd4ede370041f83cfd756112d3719e336	
+repeated	legacy:repeated	b32-0-8	normal	recover	1	1	likely-plaintext	0.036223	Base32 > Base32 > Base32 > Base32 > Base32 > Base32 > Base32 > Base32		3ad3994e9c09c8c25fa84fba5a11baefd4ede370041f83cfd756112d3719e336	
+repeated	legacy:repeated	b64-2-10	normal	recover	1	1	likely-plaintext	0.017686	Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64 > Base64		b932afbefdf113bc78b5380d2f3712a8800ae0af7630aaa1b2b797a867bd00e0	
+mixed	legacy:mixed	mix-0-0	normal	recover	1	1	likely-plaintext	0.083914	Binary > Base32 > Caesar > Base64		3ad3994e9c09c8c25fa84fba5a11baefd4ede370041f83cfd756112d3719e336	
+mixed	legacy:mixed	mix-0-1	normal	recover	1	1	likely-plaintext	0.207051	Decimal bytes > Single-byte XOR > Binary > Base64 > Base64 > Base64		3ad3994e9c09c8c25fa84fba5a11baefd4ede370041f83cfd756112d3719e336	
+mixed	legacy:mixed	mix-1-0	normal	recover	1	1	likely-plaintext	0.082253	Binary > Base32 > Caesar > Base64		a78dc8a0d565d1fa897cf1de4ed1cf706ddbac9e32cba448c212245f058ba568	
+mixed	legacy:mixed	mix-2-0	normal	recover	1	1	likely-plaintext	0.073686	Binary > Base32 > Caesar > Base64		b932afbefdf113bc78b5380d2f3712a8800ae0af7630aaa1b2b797a867bd00e0	
+mixed	legacy:mixed	mix-2-1	normal	recover	1	1	likely-plaintext	0.194776	Decimal bytes > Single-byte XOR > Binary > Base64 > Base64 > Base64		b932afbefdf113bc78b5380d2f3712a8800ae0af7630aaa1b2b797a867bd00e0	
+mixed	legacy:mixed	mix-3-0	normal	recover	1	1	likely-plaintext	0.186610	Binary > Base32 > Caesar > Base64		c330a4aaffc8faa6c7bc6e288db3f2a0339880a1a6aca76b522b9d4fa358abe5	
+advanced	legacy:advanced	affine	deep	recover	1	1	likely-plaintext	0.899647	Affine		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	
+advanced	legacy:advanced	rail	deep	recover	1	1	likely-plaintext	0.971988	Rail Fence		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	
+advanced	legacy:advanced	vigenere	deep	recover	1	1	likely-plaintext	0.930366	Vigenère		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	
+advanced	legacy:advanced	repeating-xor	deep	recover	1	1	likely-plaintext	0.797343	Repeating-key XOR		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	
+advanced	legacy:advanced	columnar	deep	recover	1	1	likely-plaintext	1.725351	Columnar transposition		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	
+advanced	legacy:advanced	substitution	deep	recover	1	1	likely-plaintext	4.853772	Substitution		9989bb4b95e8ae591e5794553cf49dd467270c9413b17d194413bde9d3b66836	

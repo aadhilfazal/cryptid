@@ -1,0 +1,3 @@
+01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e  Gutenberg 11 UTF-8 snapshot
+3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75  Gutenberg 1342 UTF-8 snapshot
+922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0  Gutenberg 1661 UTF-8 snapshot
